@@ -93,7 +93,7 @@
         if (!gameOver && !cells[index].textContent) {
             cells[index].textContent = currentPlayer;
             if (checkWinner()) {
-                document.getElementById("message").textContent = currentPlayer + " wins!";
+                document.getElementById("message").textContent = currentPlayer + " won";
                 gameOver = true;
             } else if (checkDraw()) {
                 document.getElementById("message").textContent = "It's a draw!";
